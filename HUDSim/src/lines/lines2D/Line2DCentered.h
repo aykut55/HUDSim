@@ -8,26 +8,6 @@ class CLine2DCentered : public CLine3DCentered
 public:
     virtual ~CLine2DCentered() {}
              CLine2DCentered() { centerZ = 0.f; }
-             CLine2DCentered(float centerX = 0.f, float centerY = 0.f,
-                 float length = 1.f,
-                 float rotationAngle = 0.f,
-                 const Color& color = Color(0.f, 1.f, 0.f, 1.f),
-                 float width = 1.f,
-                 bool solid = true,
-                 bool visible = true,
-                 float scale = 1.f)
-             {
-                 this->centerX = centerX;
-                 this->centerY = centerY;
-                 this->centerZ = 0.f;
-                 this->length = length;
-                 this->rotationAngle = rotationAngle;
-                 this->color = color;
-                 this->width = width;
-                 this->solid = solid;
-                 this->visible = visible;
-                 this->scale = scale;
-             }
 
     void SetCenterZ(float val) { centerZ = 0.f; }
     float GetCenterZ() const { return 0.f; }
@@ -60,8 +40,8 @@ public:
         }
 
         glBegin(GL_LINES);
-        glVertex2f(x1 * scale, y1 * scale);
-        glVertex2f(x2 * scale, y2 * scale);
+        glVertex2f(x1, y1);
+        glVertex2f(x2, y2);
         glEnd();
 
         glDisable(GL_LINE_STIPPLE);

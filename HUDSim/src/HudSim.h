@@ -6,6 +6,10 @@
 #include <chrono>
 #include <vector>
 #include <memory>
+#include <math.h>
+#include <corecrt_math_defines.h>
+#include <cmath>
+
 
 #include "Line2D.h"
 #include "Line2DCentered.h"
@@ -57,6 +61,13 @@ public:
              void DrawPitchText(float x, float y, int pitchValue);
              void DrawRollText(float x, float y, int rollValue);
              void DrawYawText(float x, float y, int yawValue);
+             void DrawThrottleText(float x, float y, int throttleValue);
+             void DrawHeadingText(float x, float y, int headingValue);
+
+             void DrawAngleOfAttackText(float x, float y, int angleOfAttackDegValue);
+             void DrawAngleOfSideSlipText(float x, float y, int angleOfSideSlipDeg);
+             void DrawFlightPathAngleText(float x, float y, int flightPathAngleDeg);
+             void DrawanGFactorText(float x, float y, int gFactor);
 
              // ortadaki “w” şeklindeki marker
              void DrawCentralWMarker(float centerX = 0.0f, float centerY = 0.0f, float size = 0.2f);
@@ -167,6 +178,51 @@ public:
 
              void IncreaseThrottle(double step);
              void DecreaseThrottle(double step);
+
+             void IncreaseHeading(double step);
+             void DecreaseHeading(double step);
+
+             void DrawPitchLabelDeepSeek(float x, float y, int pitch);
+             void DrawPitchLadderDeepSeek(float centerX, float centerY, float size, double rollDeg, double pitchDeg, float centerXGap = 0.0f, float centerYGap = 0.0f);
+
+             void DrawVerticaLinesDeepSeek(float centerX, float centerY, float size, float centerXGap = 0.25f, float centerYGap = 0.25f);
+             void DrawHorizonLinesDeepSeek(float centerX, float centerY, float size, float centerXGap = 0.25f, float centerYGap = 0.25f);
+
+             void DrawYawCompassDeepSeek(float centerX, float centerY, float size, double yawDeg, float centerXGap = 0.0f, float centerYGap = 0.0f);
+             void DrawCompassLabelDeepSeek(float x, float y, const std::string& text);
+             void DrawCompassLabelDeepSeek(float x, float y, int heading);
+             void DrawHorizontalCompassDeepSeek(float centerX, float centerY, float size, double yawDeg, float centerXGap = 0.0f, float centerYGap = 0.0f);
+
+             void DrawEmptyBox(float centerX, float centerY, float offsetX, float offsetY, float width, float height,
+                 float borderThickness,
+                 const float color[3], 
+                 float rotationDeg = 0.0f);
+
+             void DrawEmptyTriangle(float centerX, float centerY,
+                 float offsetX, float offsetY,
+                 float size,
+                 float borderThickness,
+                 const float color[3],
+                 float rotationDeg = 0.0f); // Varsayılan: düz üçgen
+
+             void DrawEmptyCircle(float centerX, float centerY,
+                 float offsetX, float offsetY,
+                 float radius,
+                 float borderThickness,
+                 const float color[3],
+                 int segments = 32);
+
+             void DrawRollCompassDeepSeek(float centerX, float centerY, float size, double rollDeg, float centerXGap, float centerYGap);
+             void DrawCompassLabelDeepSeek2(float x, float y, const std::string& text);
+
+
+             void DrawThrottleCompassDeepSeek1(float centerX, float centerY, float size, double throttle, float centerXGap, float centerYGap);
+             void DrawThrottleCompassDeepSeek2(float centerX, float centerY, float size, double throttle, float centerXGap, float centerYGap);
+             void DrawThrottleCompassDeepSeek(float centerX, float centerY, float size, double throttle, float centerXGap, float centerYGap);
+
+             void DrawCompassLine_(float lineOffsetX, float yPos, float length, bool isHighlighted, int value = -1);
+             void DrawHorizontalIndicator_(float lineOffsetX, float length);
+             void DrawArrowIndicator(float x, float y, float size, double throttle, float minY, float maxY, float thickness = 2.0f);
 
 protected:
 

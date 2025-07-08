@@ -8,25 +8,6 @@ class CLine2DHorizontal : public CLine3DHorizontal
 public:
     virtual ~CLine2DHorizontal() {}
              CLine2DHorizontal() { z1 = 0.f; z2 = 0.f; }
-             CLine2DHorizontal(float x1 = 0.f, float y1 = 0.f,
-                 float x2 = 1.f, float y2 = 0.f,
-                 const Color& color = Color(0.f, 1.f, 0.f, 1.f),
-                 float width = 1.f,
-                 bool solid = true,
-                 bool visible = true,
-                 float scale = 1.f)
-             {
-                 this->x1 = x1; this->y1 = y1;
-                 this->x2 = x2; this->y2 = y2;
-                 this->color = color;
-                 this->width = width;
-                 this->solid = solid;
-                 this->visible = visible;
-                 this->scale = scale;
-
-                 z1 = 0.f;
-                 z2 = 0.f;
-             }
 
     void SetZ1(float val) override { z1 = 0.f; }
     void SetZ2(float val) override { z2 = 0.f; }
@@ -47,8 +28,8 @@ public:
         }
 
         glBegin(GL_LINES);
-        glVertex2f(x1 * scale, y1 * scale);
-        glVertex2f(x2 * scale, y2 * scale);
+        glVertex2f(x1, y1);
+        glVertex2f(x2, y2);
         glEnd();
 
         glDisable(GL_LINE_STIPPLE);

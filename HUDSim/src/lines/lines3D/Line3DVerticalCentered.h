@@ -7,24 +7,7 @@ class CLine3DVerticalCentered : public CLine3DVertical
 {
 public:
     virtual ~CLine3DVerticalCentered() {}
-             CLine3DVerticalCentered() : centerX(0), centerY(0), centerZ(0), length(1.f), rotationAngle(0.f) {}
-             CLine3DVerticalCentered(float centerX, float centerY, float centerZ,
-                 float length,
-                 float rotationAngle, // Rotasyon burada Y ekseni etrafında olabilir
-                 const Color& color = Color(0.f, 1.f, 0.f, 1.f),
-                 float width = 1.f,
-                 bool solid = true,
-                 bool visible = true,
-                 float scale = 1.f)
-                 : centerX(centerX), centerY(centerY), centerZ(centerZ),
-                 length(length), rotationAngle(rotationAngle)
-             {
-                 this->color = color;
-                 this->width = width;
-                 this->solid = solid;
-                 this->visible = visible;
-                 this->scale = scale;
-             }
+             CLine3DVerticalCentered() {}
 
     void SetCenterX(float val) { centerX = val; }
     void SetCenterY(float val) { centerY = val; }
@@ -72,8 +55,8 @@ public:
         }
 
         glBegin(GL_LINES);
-        glVertex3f(x1 * scale, y1 * scale, z1 * scale);
-        glVertex3f(x2 * scale, y2 * scale, z2 * scale);
+        glVertex3f(x1, y1, z1);
+        glVertex3f(x2, y2, z2);
         glEnd();
 
         glDisable(GL_LINE_STIPPLE);

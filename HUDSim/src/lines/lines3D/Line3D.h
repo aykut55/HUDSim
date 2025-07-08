@@ -11,22 +11,6 @@ class CLine3D
 public:
     virtual ~CLine3D() {}
              CLine3D() {}
-             CLine3D(float x1, float y1, float z1,
-                 float x2, float y2, float z2,
-                 const Color& color = Color(0.f, 1.f, 0.f, 1.f),
-                 float width = 1.f,
-                 bool solid = true,
-                 bool visible = true,
-                 float scale = 1.f)
-                 : x1(x1), y1(y1), z1(z1),
-                 x2(x2), y2(y2), z2(z2),
-                 color(color),
-                 width(width),
-                 solid(solid),
-                 visible(visible),
-                 scale(scale)
-             {
-             }
 
     // Getters
     virtual float GetX1() const { return x1; }
@@ -41,8 +25,6 @@ public:
     bool IsSolid() const { return solid; }
     bool IsVisible() const { return visible; }
 
-    float GetScale() const { return scale; }
-
     // Setters
     virtual void SetX1(float val) { x1 = val; }
     virtual void SetY1(float val) { y1 = val; }
@@ -56,8 +38,6 @@ public:
     void SetWidth(float w) { width = w; }
     void SetSolid(bool s) { solid = s; }
     void SetVisible(bool v) { visible = v; }
-
-    void SetScale(float s) { scale = s; }
 
     // Length calculation (3D distance)
     float GetLength() const {
@@ -98,8 +78,6 @@ protected:
     float width = 1.0f;
     bool solid = true;
     bool visible = true;
-
-    float scale = 1.0f;   // Ölçek
 
 private:
 

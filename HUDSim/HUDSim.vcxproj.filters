@@ -5,147 +5,15 @@
     <ClCompile Include="src\HudSim.cpp">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="src\lines\lines2D\Line2D.cpp">
-      <Filter>src\lines\lines2D</Filter>
-    </ClCompile>
-    <ClCompile Include="src\lines\lines2D\Line2DCentered.cpp">
-      <Filter>src\lines\lines2D</Filter>
-    </ClCompile>
-    <ClCompile Include="src\lines\lines2D\Line2DHorizontal.cpp">
-      <Filter>src\lines\lines2D</Filter>
-    </ClCompile>
-    <ClCompile Include="src\lines\lines2D\Line2DHorizontalCentered.cpp">
-      <Filter>src\lines\lines2D</Filter>
-    </ClCompile>
-    <ClCompile Include="src\lines\lines2D\Line2DHorizontalStartLength.cpp">
-      <Filter>src\lines\lines2D</Filter>
-    </ClCompile>
-    <ClCompile Include="src\lines\lines2D\Line2DStartLength.cpp">
-      <Filter>src\lines\lines2D</Filter>
-    </ClCompile>
-    <ClCompile Include="src\lines\lines2D\Line2DVertical.cpp">
-      <Filter>src\lines\lines2D</Filter>
-    </ClCompile>
-    <ClCompile Include="src\lines\lines2D\Line2DVerticalCentered.cpp">
-      <Filter>src\lines\lines2D</Filter>
-    </ClCompile>
-    <ClCompile Include="src\lines\lines2D\Line2DVerticalStartLength.cpp">
-      <Filter>src\lines\lines2D</Filter>
-    </ClCompile>
-    <ClCompile Include="src\lines\lines3D\Line3D.cpp">
-      <Filter>src\lines\lines3D</Filter>
-    </ClCompile>
-    <ClCompile Include="src\lines\lines3D\Line3DCentered.cpp">
-      <Filter>src\lines\lines3D</Filter>
-    </ClCompile>
-    <ClCompile Include="src\lines\lines3D\Line3DHorizontal.cpp">
-      <Filter>src\lines\lines3D</Filter>
-    </ClCompile>
-    <ClCompile Include="src\lines\lines3D\Line3DHorizontalCentered.cpp">
-      <Filter>src\lines\lines3D</Filter>
-    </ClCompile>
-    <ClCompile Include="src\lines\lines3D\Line3DHorizontalStartLength.cpp">
-      <Filter>src\lines\lines3D</Filter>
-    </ClCompile>
-    <ClCompile Include="src\lines\lines3D\Line3DStartLength.cpp">
-      <Filter>src\lines\lines3D</Filter>
-    </ClCompile>
-    <ClCompile Include="src\lines\lines3D\Line3DVertical.cpp">
-      <Filter>src\lines\lines3D</Filter>
-    </ClCompile>
-    <ClCompile Include="src\lines\lines3D\Line3DVerticalCentered.cpp">
-      <Filter>src\lines\lines3D</Filter>
-    </ClCompile>
-    <ClCompile Include="src\lines\lines3D\Line3DVerticalStartLength.cpp">
-      <Filter>src\lines\lines3D</Filter>
-    </ClCompile>
-    <ClCompile Include="src\HudSimExt.cpp">
-      <Filter>src</Filter>
-    </ClCompile>
-    <ClCompile Include="src\MyHudSim.cpp">
-      <Filter>src</Filter>
-    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{74fb4c7e-6240-42d9-82fb-489b1050568f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\HudSim.h">
       <Filter>src</Filter>
     </ClInclude>
-    <ClInclude Include="src\lines\lines2D\Line2D.h">
-      <Filter>src\lines\lines2D</Filter>
-    </ClInclude>
-    <ClInclude Include="src\lines\lines2D\Line2DCentered.h">
-      <Filter>src\lines\lines2D</Filter>
-    </ClInclude>
-    <ClInclude Include="src\lines\lines2D\Line2DHorizontal.h">
-      <Filter>src\lines\lines2D</Filter>
-    </ClInclude>
-    <ClInclude Include="src\lines\lines2D\Line2DHorizontalCentered.h">
-      <Filter>src\lines\lines2D</Filter>
-    </ClInclude>
-    <ClInclude Include="src\lines\lines2D\Line2DHorizontalStartLength.h">
-      <Filter>src\lines\lines2D</Filter>
-    </ClInclude>
-    <ClInclude Include="src\lines\lines2D\Line2DStartLength.h">
-      <Filter>src\lines\lines2D</Filter>
-    </ClInclude>
-    <ClInclude Include="src\lines\lines2D\Line2DVertical.h">
-      <Filter>src\lines\lines2D</Filter>
-    </ClInclude>
-    <ClInclude Include="src\lines\lines2D\Line2DVerticalCentered.h">
-      <Filter>src\lines\lines2D</Filter>
-    </ClInclude>
-    <ClInclude Include="src\lines\lines2D\Line2DVerticalStartLength.h">
-      <Filter>src\lines\lines2D</Filter>
-    </ClInclude>
-    <ClInclude Include="src\lines\lines3D\Line3D.h">
-      <Filter>src\lines\lines3D</Filter>
-    </ClInclude>
-    <ClInclude Include="src\lines\lines3D\Line3DCentered.h">
-      <Filter>src\lines\lines3D</Filter>
-    </ClInclude>
-    <ClInclude Include="src\lines\lines3D\Line3DHorizontal.h">
-      <Filter>src\lines\lines3D</Filter>
-    </ClInclude>
-    <ClInclude Include="src\lines\lines3D\Line3DHorizontalCentered.h">
-      <Filter>src\lines\lines3D</Filter>
-    </ClInclude>
-    <ClInclude Include="src\lines\lines3D\Line3DHorizontalStartLength.h">
-      <Filter>src\lines\lines3D</Filter>
-    </ClInclude>
-    <ClInclude Include="src\lines\lines3D\Line3DStartLength.h">
-      <Filter>src\lines\lines3D</Filter>
-    </ClInclude>
-    <ClInclude Include="src\lines\lines3D\Line3DVertical.h">
-      <Filter>src\lines\lines3D</Filter>
-    </ClInclude>
-    <ClInclude Include="src\lines\lines3D\Line3DVerticalCentered.h">
-      <Filter>src\lines\lines3D</Filter>
-    </ClInclude>
-    <ClInclude Include="src\lines\lines3D\Line3DVerticalStartLength.h">
-      <Filter>src\lines\lines3D</Filter>
-    </ClInclude>
-    <ClInclude Include="src\lines\Color.h">
-      <Filter>src</Filter>
-    </ClInclude>
-    <ClInclude Include="src\HudSimExt.h">
-      <Filter>src</Filter>
-    </ClInclude>
-    <ClInclude Include="src\MyHudSim.h">
-      <Filter>src</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <Filter Include="src">
-      <UniqueIdentifier>{1fede8bd-203d-4c66-a906-ea84e81735a3}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="src\lines">
-      <UniqueIdentifier>{c56521a7-e531-442f-b7ba-0e2b3c31a625}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="src\lines\lines2D">
-      <UniqueIdentifier>{b20786f3-7122-4dd0-bde3-e6630e92109a}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="src\lines\lines3D">
-      <UniqueIdentifier>{802b75b7-4cc5-4942-aa32-6d66cc1d0de4}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
 </Project>
