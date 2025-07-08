@@ -7,7 +7,25 @@ class CLine3DStartLength : public CLine3D
 {
 public:
     virtual ~CLine3DStartLength() {}
-             CLine3DStartLength() {}
+             CLine3DStartLength() : startX(0), startY(0), startZ(0), length(1.f), rotationAngle(0.f) {}
+             CLine3DStartLength(float startX, float startY, float startZ,
+                 float length,
+                 float rotationAngle,
+                 const Color& color = Color(0.f, 1.f, 0.f, 1.f),
+                 float width = 1.f,
+                 bool solid = true,
+                 bool visible = true,
+                 float scale = 1.f)
+                 : startX(startX), startY(startY), startZ(startZ),
+                 length(length),
+                 rotationAngle(rotationAngle)
+             {
+                 this->color = color;
+                 this->width = width;
+                 this->solid = solid;
+                 this->visible = visible;
+                 this->scale = scale;
+             }
 
     float GetStartX() const { return startX; }
     float GetStartY() const { return startY; }

@@ -8,6 +8,22 @@ class CLine3DVertical : public CLine3D
 public:
     virtual ~CLine3DVertical() {}
              CLine3DVertical() {}
+             CLine3DVertical(float x1, float y1, float z1,
+                 float x2, float y2, float z2,
+                 const Color& color = Color(0.f, 1.f, 0.f, 1.f),
+                 float width = 1.f,
+                 bool solid = true,
+                 bool visible = true,
+                 float scale = 1.f)
+             {
+                 this->x1 = x1; this->y1 = y1; this->z1 = z1;
+                 this->x2 = x2; this->y2 = y2; this->z2 = z2;
+                 this->color = color;
+                 this->width = width;
+                 this->solid = solid;
+                 this->visible = visible;
+                 this->scale = scale;
+             }
 
     void Draw() const override {
         if (!visible) return;

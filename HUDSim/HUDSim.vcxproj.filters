@@ -59,6 +59,12 @@
     <ClCompile Include="src\lines\lines3D\Line3DVerticalStartLength.cpp">
       <Filter>src\lines\lines3D</Filter>
     </ClCompile>
+    <ClCompile Include="src\HudSimExt.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MyHudSim.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\HudSim.h">
@@ -119,6 +125,12 @@
       <Filter>src\lines\lines3D</Filter>
     </ClInclude>
     <ClInclude Include="src\lines\Color.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\HudSimExt.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MyHudSim.h">
       <Filter>src</Filter>
     </ClInclude>
   </ItemGroup>

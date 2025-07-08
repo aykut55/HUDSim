@@ -7,7 +7,24 @@ class CLine3DVerticalCentered : public CLine3DVertical
 {
 public:
     virtual ~CLine3DVerticalCentered() {}
-             CLine3DVerticalCentered() {}
+             CLine3DVerticalCentered() : centerX(0), centerY(0), centerZ(0), length(1.f), rotationAngle(0.f) {}
+             CLine3DVerticalCentered(float centerX, float centerY, float centerZ,
+                 float length,
+                 float rotationAngle, // Rotasyon burada Y ekseni etrafında olabilir
+                 const Color& color = Color(0.f, 1.f, 0.f, 1.f),
+                 float width = 1.f,
+                 bool solid = true,
+                 bool visible = true,
+                 float scale = 1.f)
+                 : centerX(centerX), centerY(centerY), centerZ(centerZ),
+                 length(length), rotationAngle(rotationAngle)
+             {
+                 this->color = color;
+                 this->width = width;
+                 this->solid = solid;
+                 this->visible = visible;
+                 this->scale = scale;
+             }
 
     void SetCenterX(float val) { centerX = val; }
     void SetCenterY(float val) { centerY = val; }

@@ -128,6 +128,7 @@
   <ItemGroup>
     <ClCompile Include="main.cpp" />
     <ClCompile Include="src\HudSim.cpp" />
+    <ClCompile Include="src\HudSimExt.cpp" />
     <ClCompile Include="src\lines\lines2D\Line2D.cpp" />
     <ClCompile Include="src\lines\lines2D\Line2DCentered.cpp" />
     <ClCompile Include="src\lines\lines2D\Line2DHorizontal.cpp" />
@@ -146,9 +147,11 @@
     <ClCompile Include="src\lines\lines3D\Line3DVertical.cpp" />
     <ClCompile Include="src\lines\lines3D\Line3DVerticalCentered.cpp" />
     <ClCompile Include="src\lines\lines3D\Line3DVerticalStartLength.cpp" />
+    <ClCompile Include="src\MyHudSim.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\HudSim.h" />
+    <ClInclude Include="src\HudSimExt.h" />
     <ClInclude Include="src\lines\Color.h" />
     <ClInclude Include="src\lines\lines2D\Line2D.h" />
     <ClInclude Include="src\lines\lines2D\Line2DCentered.h" />
@@ -168,6 +171,7 @@
     <ClInclude Include="src\lines\lines3D\Line3DVertical.h" />
     <ClInclude Include="src\lines\lines3D\Line3DVerticalCentered.h" />
     <ClInclude Include="src\lines\lines3D\Line3DVerticalStartLength.h" />
+    <ClInclude Include="src\MyHudSim.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

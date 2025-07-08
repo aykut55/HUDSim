@@ -8,6 +8,26 @@ class CLine2DVerticalCentered : public CLine3DVerticalCentered
 public:
     virtual ~CLine2DVerticalCentered() {}
              CLine2DVerticalCentered() { centerZ = 0.f; }
+             CLine2DVerticalCentered(float centerX = 0.f, float centerY = 0.f,
+                 float length = 1.f,
+                 float rotationAngle = 0.f,
+                 const Color& color = Color(0.f, 1.f, 0.f, 1.f),
+                 float width = 1.f,
+                 bool solid = true,
+                 bool visible = true,
+                 float scale = 1.f)
+             {
+                 this->centerX = centerX;
+                 this->centerY = centerY;
+                 this->centerZ = 0.f;
+                 this->length = length;
+                 this->rotationAngle = rotationAngle;
+                 this->color = color;
+                 this->width = width;
+                 this->solid = solid;
+                 this->visible = visible;
+                 this->scale = scale;
+             }
 
     void SetCenterZ(float val) { centerZ = 0.f; }
     float GetCenterZ() const { return 0.f; }

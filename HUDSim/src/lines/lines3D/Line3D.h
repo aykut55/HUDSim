@@ -11,6 +11,22 @@ class CLine3D
 public:
     virtual ~CLine3D() {}
              CLine3D() {}
+             CLine3D(float x1, float y1, float z1,
+                 float x2, float y2, float z2,
+                 const Color& color = Color(0.f, 1.f, 0.f, 1.f),
+                 float width = 1.f,
+                 bool solid = true,
+                 bool visible = true,
+                 float scale = 1.f)
+                 : x1(x1), y1(y1), z1(z1),
+                 x2(x2), y2(y2), z2(z2),
+                 color(color),
+                 width(width),
+                 solid(solid),
+                 visible(visible),
+                 scale(scale)
+             {
+             }
 
     // Getters
     virtual float GetX1() const { return x1; }
